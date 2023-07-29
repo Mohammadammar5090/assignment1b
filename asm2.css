@@ -199,21 +199,21 @@ h1{
 /*--For Windows--*/
 @media (min-width: 992px){
 .one{
-      width: 31.8%;
+      width: 30%;
         float: right;
 
 
 }
     .two{
 
-        width: 31.8%;
+        width: 30%;
         float: right;
 
 
     }
 
         .three{
-            width: 31.8%;
+            width: 30%;
              float: right;
     }
 }
