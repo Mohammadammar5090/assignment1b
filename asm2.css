@@ -1,0 +1,265 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*--reset code--*/
+html, body, div, span, applet, object, iframe,
+ h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/*--Start--*/
+
+h1{
+    margin: 150px 0px 0px 0px;
+    text-align: center;
+    font-family: "Comic Sans MS", arial;
+    font-size: 100px;
+    animation: fadeInOut 2s ease-in-out infinite;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animated-heading {
+  animation: slideInFromLeft 2s ease-in-out, bounce 1s ease-in-out  2s;
+
+}
+
+
+
+
+.flex{
+
+    margin: 150px 30px 0px 0px;
+    height: 250px;
+
+    padding: 50px 50px 50px 20px;
+    font-family: "Comic Sans MS", arial;
+
+
+}
+
+.chicken{
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 5px 0px 5px 10px;
+
+    font-size: 25px;
+    background: #F2BED1;
+    color: black;
+    font-weight: bold
+}
+
+
+.beef{
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 5px 0px 5px 10px;
+
+    font-size: 25px;
+    background: #FDCEDF;
+    color: black;
+    font-weight: bold
+}
+
+
+.sushi{
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 1px solid black;
+    padding: 5px 0px 5px 10px;
+
+    font-size: 25px;
+    background: #F8E8EE;
+    color: black;
+    font-weight: bold
+}
+
+
+
+/*chicken*/
+.one{
+
+    position: relative;
+    padding: 32px 0px 0px 0px;
+    height: 150px;
+    margin: 5px;
+    border: 1px solid black;
+    background: #4682A9;
+    color: white;
+    line-height: 25px;
+    overflow: auto;
+}
+
+/*beef*/
+.tow{
+
+    position: relative;
+    padding: 32px 0px 0px 0px;
+    height: 150px;
+    margin: 5px;
+    border: 1px solid black;
+    background: #749BC2;
+    color: white;
+    line-height: 25px;
+    overflow: auto;
+}
+
+/*sushi*/
+.three{
+
+    position: relative;
+    padding: 32px 0px 0px 0px;
+    height: 150px;
+    margin: 5px;
+    border: 1px solid black;
+    background: #91C8E4;
+    color: white;
+    line-height: 25px;
+    overflow: auto;
+
+}
+
+
+/*--For Windows--*/
+@media (min-width: 992px){
+.one{
+      width: 31.8%;
+        float: right;
+
+
+}
+    .tow{
+
+        width: 31.8%;
+        float: right;
+
+
+    }
+
+        .three{
+            width: 31.8%;
+             float: right;
+    }
+}
+
+/*For tablet*/
+@media (max-width: 991px)and (min-width:768px ){
+
+.one{
+      width: 46%;
+        float: right;
+
+
+}
+    .tow{
+
+        width: 46%;
+        float: right;
+
+
+    }
+
+        .three{
+            width: 93%;
+             float: right;
+    }
+}
+
+/*--For mobile--*/
+@media (max-width: 767px){
+
+.one{
+      width: 100%;
+        float: right;
+
+
+}
+    .tow{
+
+        width: 100%;
+        float: right;
+
+
+    }
+
+        .three {
+            width: 100%;
+            float: right;
+        }
+
+}
+
+
